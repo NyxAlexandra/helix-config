@@ -1,0 +1,33 @@
+theme = "base16_transparent"
+
+[editor]
+auto-format = true
+gutters = ["diff", "line-numbers", "spacer"]
+completion-trigger-len = 1
+
+[editor.indent-guides]
+render = true
+character = "╎"
+idle-timeout = 0
+auto-format = true
+bufferline = "multiple"
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "separator", "file-name"]
+right = ["spinner", "diagnostics", "selections"] 
+separator = "╎"
+mode.normal = "normal"
+mode.insert = "insert"
+mode.select = "select"
